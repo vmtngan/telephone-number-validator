@@ -1,0 +1,117 @@
+:root {
+  --text: #0a0a23;
+  --primary: #fff;
+  --secondary: #000;
+  --background: #3b3b4f;
+  --screen-phone: #dfdfe2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: Verdana, sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 10px;
+}
+
+.logo {
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.title {
+  color: var(--primary);
+  max-width: 480px;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.phone-container {
+  background-color: var(--secondary);
+  border-radius: 15px;
+  width: 250px;
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.phone-camera {
+  background-color: var(--screen-phone);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.phone-screen {
+  background-color: var(--screen-phone);
+  width: 100%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.phone-screen label {
+  margin: 10px auto 5px;
+}
+
+.phone-screen input {
+  width: 90%;
+  height: 42px;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid var(--secondary);
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px auto;
+}
+
+.phone-btns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.btn {
+  cursor: pointer;
+  width: 100px;
+  font-size: 18px;
+  color: var(--text);
+  background-image: linear-gradient(#ffffff, #928d86);
+  background-color: var(--primary);
+  border-color: var(--primary);
+  border-width: 3px;
+  margin: 0 10px;
+}
+
+.results-div {
+  width: 100%;
+  height: 260px;
+  overflow-y: auto;
+  padding: 0 5px;
+}
+
+.results-text {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 10px 0;
+}
